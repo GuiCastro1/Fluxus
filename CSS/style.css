@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -17,6 +18,10 @@
 }
 
 @media (min-width: 1200px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         background-color: var(--AZUL-CLARO);
     }
@@ -45,8 +50,6 @@
     .logo {
         display: flex;
         align-items: center;
-
-
     }
 
     .logo img {
@@ -84,33 +87,37 @@
         display: none;
     }
 
-
-
-    /* .historia {
-        height: 100vh;
-        margin-top: 150px;
-        display: flex;
-    }
-
     #nossaHistoria {
         margin-top: 150px;
         text-align: center;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    } */
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #Equipe {
+        text-align: center;
+    }
+
+    #Projeto {
+        text-align: center;
+    }
+
+    #Desafio {
+        text-align: center;
+    }
+   
+
+
     .historia {
         height: 100vh;
         margin-top: 150px;
         display: flex;
-        flex-direction: column; /* Adiciona esta linha */
-        justify-content: center; /* Centraliza verticalmente */
+        padding: 20px;
     }
-    
-    #nossaHistoria {
-        text-align: center;
-        order: -1; /* Mova o título para o topo */
-    }
+
+
+
 
     .Ph {
         display: flex;
@@ -170,26 +177,30 @@
         }
     }
 
-    .teste {
-        height: 250vh;
-        display: flex;
 
+
+    .teste {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .card-container {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         margin-top: 20px;
     }
 
     .cards {
-        height: auto;
+        height: 800px;
         width: 250px;
         background-color: var(--AZUL-MEIO);
         border-radius: 8px;
         overflow: hidden;
-        margin: 50px;
+        margin: 25px;
         transition: transform 0.6s ease, box-shadow 0.6s ease;
     }
 
@@ -219,58 +230,54 @@
         font-size: 20px;
         color: var(--roror-BRANCO-B);
     }
+    #mvv {
+        text-align: center;
+        
+    }
+  
+    .MVV{
+        height: 80vh;
+        display: flex;
+        justify-content:center;
+        margin: 25px;
+        margin-top: 0px;
+        padding: 30px;
+    }
+    .MVV p{
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 25px;
+        padding: 50px;
+        text-align: justify;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
+    #Escritorio {
+        text-align: center;
+    }
+    .local{
+        margin-top: 5%;
+        height: 80vh;
+        display: flex;
+        padding: 20px;
+    }
+    .imgLocal img{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: center;
+    }
+    .local p{
+        display: flex;
+        align-items: start;
+        font-size: 1.5em;
+        text-align: justify;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
 
 }
