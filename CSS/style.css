@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/* font-family: "Bree Serif", serif;
+font-weight: 400;
+font-style: normal; */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 :root {
@@ -13,7 +17,8 @@
     --AZUL-CLAROOO: #BCE6FF;
     --AZUL-BRANCO: #F1F9FB;
     --AZUL-TRNPARENTE: #D5F2F8;
-    --BLACK: #000000;
+    --BLACK: #365271;
+    --b:#000000;
 
 }
 
@@ -23,11 +28,28 @@
     }
 
     body {
-        background-color: var(--AZUL-CLARO);
+        background-color: var(--AZUL-CLAROOO);
+    }
+    h2{
+        color: var(--BLACK);
+        font-size: 2.5em;
+        font-family: "Bree Serif", serif;
+        font-weight: lighter;
+    }
+    h3{
+        color: var(--BLACK);
+        font-size: 2em;
+        font-family: "Bree Serif", serif;
+        font-weight: lighter;
+    }
+    p{  color: var(--b);
+        font-size: 1.3em;
+        font-family: "Bree Serif", serif;
+        font-weight: lighter;
     }
 
     header {
-        background-color: transparent;
+        background-color: var(--AZUL-BRANCO);
         box-shadow: 0px 3px 10px #464646;
         position: fixed;
         /* Fixa o cabeçalho no topo da página */
@@ -74,9 +96,10 @@
 
     .nav-link {
         text-decoration: none;
-        font-size: 1.15rem;
-        color: #fff;
-        font-weight: 400;
+        font-size: 1.5rem;
+        color: var(--AZUL-ESCURO);
+        font-family: "Bree Serif", serif;
+        font-weight: lighter;
     }
 
     .mobile-menu-icon {
@@ -122,7 +145,7 @@
     .Ph {
         display: flex;
         align-items: start;
-        font-size: 1.5em;
+
         text-align: justify;
         margin-top: 10%;
         margin-left: 5%;
@@ -177,7 +200,49 @@
         }
     }
 
-
+    /* .teste {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .cards {
+        height: 800px;
+        width: 250px;
+        background-color: var(--AZUL-MEIO);
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 25px;
+        transition: transform 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
+    }
+    
+    .cards:hover {
+        transform: scale(1.1);
+        box-shadow: 20px 20px 4px var(--AZUL-ESCURO);
+        background-image: url(../img/);
+        background-size: cover; Garante que a imagem de fundo cubra todo o cartão
+    }
+    
+    .cards img {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        opacity: 1; Imagem totalmente visível
+        transition: opacity 0.6s ease; Suaviza a mudança de opacidade
+    }
+    
+    .cards:hover img {
+        opacity: 0; Faz a imagem desaparecer ao passar o mouse
+    } */
 
     .teste {
         height: 100vh;
@@ -207,6 +272,7 @@
     .cards:hover {
         transform: scale(1.1);
         box-shadow: 20px 20px 4px var(--AZUL-ESCURO);
+       
     }
 
     .cards img {
@@ -214,21 +280,24 @@
         height: auto;
         padding: 16px;
     }
+    
 
     .content {
         padding: 16px;
     }
 
     .content h3 {
+        text-align: center;
         font-size: 30px;
-        margin-bottom: 8px;
-        color: var(--roror-PRETO-p);
+        
+        color: var(--b);
     }
 
     .content p {
         text-align: justify;
-        font-size: 20px;
-        color: var(--roror-BRANCO-B);
+        padding: auto;
+       color: var(--AZUL-CLAROOO);
+        
     }
     #mvv {
         text-align: center;
@@ -272,7 +341,7 @@
     .local p{
         display: flex;
         align-items: start;
-        font-size: 1.5em;
+    
         text-align: justify;
         margin-top: 5%;
         margin-left: 5%;
