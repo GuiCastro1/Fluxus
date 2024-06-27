@@ -8,3 +8,4 @@ function menuShow() {
         document.querySelector('.icon').src = "../img/close_white_36dp.svg";
     }
 }
+

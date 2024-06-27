@@ -24,65 +24,110 @@
     header {
         background-color: transparent;
         box-shadow: 0px 3px 10px #464646;
-        position: fixed; /* Fixa o cabeçalho no topo da página */
-        width: 100%; /* Garante que o cabeçalho ocupe toda a largura da viewport */
-        top: 0; /* Posiciona o cabeçalho no topo da viewport */
-        left: 0; /* Alinha o cabeçalho à esquerda da viewport */
-        z-index: 1000; /* Garante que o cabeçalho fique acima de outros conteúdos */
+        position: fixed;
+        /* Fixa o cabeçalho no topo da página */
+        width: 100%;
+        /* Garante que o cabeçalho ocupe toda a largura da viewport */
+        top: 0;
+        /* Posiciona o cabeçalho no topo da viewport */
+        left: 0;
+        /* Alinha o cabeçalho à esquerda da viewport */
+        z-index: 1000;
+        /* Garante que o cabeçalho fique acima de outros conteúdos */
     }
-    
+
     .nav-bar {
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 6rem;
     }
-    
+
     .logo {
         display: flex;
         align-items: center;
-        
+
 
     }
-    
+
     .logo img {
         height: 50px;
         width: 100px;
     }
-    
+
     .nav-list {
         display: flex;
         align-items: center;
     }
-    
+
     .nav-list ul {
         display: flex;
         justify-content: center;
         list-style: none;
     }
-    
+
     .nav-item {
         margin: 0 15px;
     }
-    
+
     .nav-link {
         text-decoration: none;
         font-size: 1.15rem;
         color: #fff;
         font-weight: 400;
     }
-       
+
     .mobile-menu-icon {
         display: none;
     }
-    
+
     .mobile-menu {
         display: none;
     }
-    
-   
-    
 
+
+
+    /* .historia {
+        height: 100vh;
+        margin-top: 150px;
+        display: flex;
+    }
+
+    #nossaHistoria {
+        margin-top: 150px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    } */
+    .historia {
+        height: 100vh;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column; /* Adiciona esta linha */
+        justify-content: center; /* Centraliza verticalmente */
+    }
     
+    #nossaHistoria {
+        text-align: center;
+        order: -1; /* Mova o título para o topo */
+    }
+
+    .Ph {
+        display: flex;
+        align-items: start;
+        font-size: 1.5em;
+        text-align: justify;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .img-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: center;
+    }
 
 
     .PAI-CARROSSEL {
@@ -125,18 +170,20 @@
         }
     }
 
-    .teste{
+    .teste {
         height: 250vh;
         display: flex;
-    
+
     }
-    .card-container{
+
+    .card-container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 20px;
     }
-    .cards{
+
+    .cards {
         height: auto;
         width: 250px;
         background-color: var(--AZUL-MEIO);
@@ -145,24 +192,29 @@
         margin: 50px;
         transition: transform 0.6s ease, box-shadow 0.6s ease;
     }
-    .cards:hover{
+
+    .cards:hover {
         transform: scale(1.1);
-        box-shadow:20px 20px 4px var(--AZUL-ESCURO);
+        box-shadow: 20px 20px 4px var(--AZUL-ESCURO);
     }
-    .cards img{
+
+    .cards img {
         width: 100%;
         height: auto;
         padding: 16px;
     }
-    .content{
+
+    .content {
         padding: 16px;
     }
-    .content h3{
-      font-size: 30px;
-      margin-bottom: 8px;
-      color: var(--roror-PRETO-p);
+
+    .content h3 {
+        font-size: 30px;
+        margin-bottom: 8px;
+        color: var(--roror-PRETO-p);
     }
-    .content p{
+
+    .content p {
         text-align: justify;
         font-size: 20px;
         color: var(--roror-BRANCO-B);
@@ -243,37 +295,46 @@
     .nav-bar {
         padding: 1.5rem 4rem;
     }
+
     .nav-item {
         display: none;
     }
+
     .login-button {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
+
     .mobile-menu .login-button {
         display: block;
         padding: 1rem 2rem;
     }
+
     .mobile-menu .login-button button {
         width: 100%;
     }
+
     .open {
         display: block;
     }
