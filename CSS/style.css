@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 /* font-family: "Bree Serif", serif;
 font-weight: 400;
 font-style: normal; */
@@ -6,7 +7,7 @@ font-style: normal; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 :root {
@@ -18,9 +19,10 @@ font-style: normal; */
     --AZUL-BRANCO: #F1F9FB;
     --AZUL-TRNPARENTE: #D5F2F8;
     --BLACK: #365271;
-    --b:#000000;
+    --b: #000000;
 
 }
+
 /* =============================================================== */
 @media (min-width: 1300px) {
     html {
@@ -30,19 +32,23 @@ font-style: normal; */
     body {
         background-color: var(--AZUL-CLAROOO);
     }
-    h2{
+
+    h2 {
         color: var(--BLACK);
         font-size: 2.5em;
         font-family: "Bree Serif", serif;
         font-weight: lighter;
     }
-    h3{
+
+    h3 {
         color: var(--BLACK);
         font-size: 2em;
         font-family: "Bree Serif", serif;
         font-weight: lighter;
     }
-    p{  color: var(--b);
+
+    p {
+        color: var(--b);
         font-size: 1.3em;
         font-family: "Bree Serif", serif;
         font-weight: lighter;
@@ -51,10 +57,10 @@ font-style: normal; */
     header {
         background-color: var(--AZUL-BRANCO);
         box-shadow: 0px 3px 10px #464646;
-        position: fixed;        
-        width: 100%;        
-        top: 0;        
-        left: 0;      
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
         z-index: 1000;
     }
 
@@ -106,22 +112,345 @@ font-style: normal; */
         display: none;
     }
 
-  
-    
+    /* ====================================================================================================================================================CARROSSEL============================================================================================================================================================== */
+    .slider {
+        width: auto;
+        /* max-width: 100vw; */
+        height: 800px;
+        margin: auto;
+        margin-top: 90px;
+        position: relative;
+        overflow: hidden;
+        /* Esconde o conteúdo que ultrapassa o bounds */
+    }
 
+    .lista {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        width: max-content;
+        transition: left 1s ease-in-out;
+        /* Transição suave */
+    }
+
+    .lista img {
+        width: 1400px;
+        max-width: 100vw;
+        height: 75%;
+        border-radius: 10px;
+        box-shadow: 0px 3px 10px #464646;
+        /* object-fit: cover; */
+    }
+
+    .botao {
+        position: absolute;
+        top: 35%;
+        /* Centraliza verticalmente na imagem */
+        left: 1%;
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .botao button {
+        cursor: pointer;
+        background-color: var(--AZUL-MEIO);
+        font-size: 30px;
+        border-radius: 50%;
+        color: var(--BLACK);
+    }
+
+    .pontos {
+        position: absolute;
+        bottom: 10px;
+        color: rebeccapurple;
+        left: 0;
+        width: 100%;
+        margin-bottom: 200px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pontos li {
+        list-style: none;
+        width: 10px;
+        height: 10px;
+        background-color: #D5F2F8;
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    .pontos li.ativo {
+        width: 30px;
+    }
+
+    .slider .item {
+        position: relative;
+    }
+
+    .custom-button {
+        position: absolute;
+        bottom: 35%;
+        left: 25%;
+        transform: translateX(-50%);
+        background-color: var(--AZUL);
+        color: white;
+        border: none;
+        padding: 40px 80px;
+        cursor: pointer;
+        z-index: 10;
+        transition: transform 1.0s ease, box-shadow 0.6s ease;
+    }
+
+    .custom-button:hover {
+
+        box-shadow: 20px 20px 1px var(--AZUL-ESCURO);
+    }
+
+    /* ====================================================================================================================================================EQUIPE==============================================================================================================================================================*/
+    #Equipe {
+        text-align: center;
+    }
+
+    .contaner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        background-color: var(--AZUL-CLARO);
+        height: auto;
+        padding: 50px;
+    }
+
+    .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .caixa_pai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 450px;
+        width: 250px;
+    }
+
+    .caixa_pai :hover.flip {
+        transform: rotateY(180deg);
+    }
+
+    .flip {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transition: transform 1.0s ease, box-shadow 0.6s ease;
+
+    }
+    .flip:hover{
+        transform: scale(1.1);
+        box-shadow: 20px 20px 1px var(--AZUL-ESCURO);
+    }
+
+    .frente,
+    .tras,
+    .frente1,
+    .tras1,
+    .frente2,
+    .tras2,
+    .frente3,
+    .tras3,
+    .frente4,
+    .tras4,
+    .frente5,
+    .tras5,
+    .frente6,
+    .tras6 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+
+    }
+
+    .frente {
+        background-image: url(../img/Davi.png);
+        background-size: cover;
+    }
+
+    .tras {
+        background-color: var(--AZUL-MEIO);
+        transform: rotateY(180deg);
+        padding: 10px;
+        text-align: center;
+    }
+    .tras a {
+        
+        margin: 3px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--AZUL-CLAROOO);
+    }
+
+    .frente1 {
+        background-image: url(../img/Ana_teste02.png);
+        background-size: cover;
+    }
+
+    .tras1 {
+        background-color: var(--AZUL-MEIO);
+        transform: rotateY(180deg);
+    }
+
+    .frente2 {
+        background-image: url(../img/Gui.png);
+        background-size: cover;
+    }
+
+    .tras2 {
+        background-color: var(--AZUL-MEIO);
+        transform: rotateY(180deg);
+    }
+
+    .frente3 {
+        background-image: url(../img/Mari.png);
+        background-size: cover;
+    }
+
+    .tras3 {
+        background-color: var(--AZUL-MEIO);
+        transform: rotateY(180deg);
+    }
+
+    .frente4 {
+        background-image: url(../img/Fabiano.png);
+        background-size: cover;
+    }
+
+    .tras4 {
+        background-color: var(--AZUL-MEIO);
+        transform: rotateY(180deg);
+    }
+
+    .frente5 {
+        background-image: url(../img/Davi.png);
+        background-size: cover;
+    }
+
+    .tras5 {
+        background-color: var(--AZUL-MEIO);
+        transform: rotateY(180deg);
+    }
+    .frente6 {
+        background-image: url(../img/Davi.png);
+        background-size: cover;
+    }
+
+    .tras6 {
+        background-color: var(--AZUL-MEIO);
+        transform: rotateY(180deg);
+    }
+
+
+    /* ============================================================================= */
+    /* =================================MVV========================================= */
+    /* ============================================================================= */
+    #mvv {
+        text-align: center;
+    }
+
+    .Falso_body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--AZUL-ESCURO);
+        height: auto;
+    }
+
+    .caixao {
+        position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .caixao .card_equipe {
+        position: relative;
+        max-width: 300px;
+        height: 200px;
+        background-color: var(--AZUL-CLARO);
+        border-radius: 10px;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        box-shadow: 0 5px 20px var(--AZUL-ESCURO);
+        transition: 0.3s ease-in-out;
+    }
+
+    .caixao .card_equipe:hover {
+        height: 700px;
+    }
+
+    .caixao .card_equipe .imagens {
+
+        position: relative;
+        height: 200px;
+        width: 200px;
+        top: -60px;
+        left: 35px;
+        z-index: 1;
+        box-shadow: 0 5px 20px var(--AZUL-ESCURO);
+    }
+
+    .caixao .card_equipe .imagens img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .caixao .card_equipe .caixao_dentro {
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #000000;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .caixao .card_equipe:hover .caixao_dentro {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 40px;
+        transition-delay: 0.3s;
+    }
 }
-/* =============================================================== */
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
     body {
         background-color: blueviolet;
     }
+
     header {
         background-color: var(--AZUL-BRANCO);
         box-shadow: 0px 3px 10px #464646;
-        position: fixed;        
-        width: 100%;        
-        top: 0;        
-        left: 0;      
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
         z-index: 1000;
     }
 
@@ -174,6 +503,7 @@ font-style: normal; */
     }
 
 }
+
 /* =============================================================== */
 @media (min-width: 768px) and (max-width: 991.98px) {
     body {
@@ -183,10 +513,10 @@ font-style: normal; */
     header {
         background-color: var(--AZUL-BRANCO);
         box-shadow: 0px 3px 10px #464646;
-        position: fixed;        
-        width: 100%;        
-        top: 0;        
-        left: 0;      
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
         z-index: 1000;
     }
 
@@ -239,18 +569,20 @@ font-style: normal; */
     }
 
 }
+
 /* =============================================================== */
 @media (min-width: 576px) and (max-width: 767.98px) {
     body {
         background-color: green;
     }
+
     header {
         background-color: var(--AZUL-BRANCO);
         box-shadow: 0px 3px 10px #464646;
-        position: fixed;        
-        width: 100%;        
-        top: 0;        
-        left: 0;      
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
         z-index: 1000;
     }
 
@@ -303,25 +635,25 @@ font-style: normal; */
     }
 
 }
+
 /* =============================================================== */
 @media (max-width: 575.98px) {
     body {
         background-color: red;
     }
+
     header {
-        background-color: var(--AZUL-BRANCO);
+        background-color: var(--AZUL-CLARO);
         box-shadow: 0px 3px 10px #464646;
-        position: fixed;        
-        width: 100%;        
-        top: 0;        
-        left: 0;      
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
         z-index: 1000;
     }
 
     .nav-bar {
         display: flex;
-        flex: auto;
-        flex-wrap: wrap;
         justify-content: space-between;
         padding: 1.5rem 6rem;
     }
@@ -332,8 +664,8 @@ font-style: normal; */
     }
 
     .logo img {
-        height: 20px;
-        width: 40px;
+        height: 70px;
+        width: 200px;
     }
 
     .nav-list {
@@ -353,11 +685,14 @@ font-style: normal; */
 
     .nav-link {
         text-decoration: none;
+        /* font-size: 1.15rem; */
         font-size: 1rem;
         color: var(--AZUL-ESCURO);
         font-family: "Bree Serif", serif;
         font-weight: lighter;
     }
+
+
 
     .mobile-menu-icon {
         display: none;
@@ -365,6 +700,53 @@ font-style: normal; */
 
     .mobile-menu {
         display: none;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
     }
 
 }
