@@ -1021,7 +1021,7 @@ font-style: normal; */
         background-color: var(--AZUL-CLARO);
         box-shadow: 0px 3px 10px #464646;
         position: fixed;
-        width: 95%;
+        width: 100vw;
         top: 0;
         left: 0;
         z-index: 1000;
@@ -1029,7 +1029,7 @@ font-style: normal; */
 
     .nav-bar {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 1.5rem 6rem;
     }
 
@@ -1310,7 +1310,7 @@ font-style: normal; */
         gap: 30px;
         background-color:#ADB48E;
         padding: 5%;
-        margin: 4%;
+        /* margin: 4%; */
         margin-top: 0;
         border-radius: 10px;
     }
@@ -1455,7 +1455,7 @@ font-style: normal; */
         gap: 30px;
         background-color: var(--AZUL-CLAROOO);
         padding: 10%;
-        margin: 4%;
+        /* margin: 4%; */
 
         border-radius: 10px;
     }
@@ -1484,9 +1484,8 @@ font-style: normal; */
         align-items: center;
         background-color: var(--AZUL-ESCURO);
         height: auto;
-        margin: 0;
-        /* padding: 10%; */
-        margin: 4%;
+        /* padding: 10%;
+        margin: 10%; */
     }
 
     .caixao {
@@ -1735,7 +1734,7 @@ flex-direction: column;
     }
 
     footer {
-        width: 105vw;
+        width: 100vw;
         color: var(--AZUL-BRANCO);
     }
     
