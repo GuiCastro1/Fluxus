@@ -16,7 +16,7 @@
 
         <nav class="nav-bar">
             <div class="logo">
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.png" alt="logo">
             </div>
             <div class="nav-list">
                 <ul>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt="Botão de menu"></button>
             </div>
         </nav>
         <div class="mobile-menu">
@@ -56,23 +56,23 @@
                 <div class="lista">
                     <div class="item">
                         <img src="img/1.png" alt="">
-                        <a href="#Equipe"> <button class="custom-button">Botão 1</button></a>
+                        <a href="#Equipe"> <button class="custom-button">Saiba Mais</button></a>
                     </div>
                     <div class="item">
                         <img src="img/2.png" alt="">
-                        <a href="#t"> <button class="custom-button">Botão 1</button></a>
+                        <a href="#t"> <button class="custom-button">Clique-me</button></a>
                     </div>
                     <div class="item">
                         <img src="img/3.png" alt="">
-                        <a href="#Desafio"> <button class="custom-button">Botão 1</button></a>
+                        <a href="#Desafio"> <button class="custom-button">Clique-me</button></a>
                     </div>
                     <div class="item">
                         <img src="img/Inserir um título.png" alt="">
-                        <button class="custom-button" onclick="botao4Acao()">Botão 4</button>
+                        <!-- <button class="custom-button" onclick="botao4Acao()">Botão 4</button> -->
                     </div>
                     <div class="item">
                         <img src="img/7.png" alt="">
-                        <a href="#e"> <button class="custom-button">Botão 1</button></a>
+                        <a href="#e"> <button class="custom-button">Envie Seu Curriculo</button></a>
                     </div>
                 </div>
                 <div class="botao">
@@ -96,7 +96,7 @@
         <section class="teste">
             <div class="card-container">
                 <div class="cards">
-                    <img src="img/Ana_teste02.png" alt="">
+                    <img src="img/Ana_teste02.png" alt="Foto da Designer Ana Beatriz">
                     <div class="content">
                         <h3>Ana Beatriz <br>Designer</h3>
                         <a href="https://github.com/seu_usuario" target="_blank">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="img/Davi.png" alt="">
+                    <img src="img/Davi.png" alt="Foto do programador Davi">
                     <div class="content">
                         <h3>Davi <br>Programador</h3>
                         <a href="https://github.com/seu_usuario" target="_blank">
@@ -346,7 +346,7 @@
         <!-- ================================================================================================================================================================================================================================================================================================================= -->
 
         <section class="CONTEINER">
-            <img src="img/LOGO_FUNDO-removebg-preview.png" alt="" id="Escritorio">
+            <img src="img/LOGO_FUNDO-removebg-preview.png" alt="Logo da FLUXUS" id="Escritorio">
             <h3 id="t2">História</h3>
             <p>
                 Um grupo de amigos, durante um happy hour, tiveram a ideia de criar a Fluxus, uma empresa de
@@ -373,7 +373,7 @@
                 
                 <div class="card_equipe">
                     <div class="imagens">
-                        <img src="img/icon-missao.png" alt="">
+                        <img src="img/icon-missao.png" alt="Icone de foguete para representar a missão da empressa. Clique para ler o txto">
                     </div>
                     <div class="caixao_dentro">
                         <h2>Missão</h2>
@@ -384,7 +384,7 @@
                 </div>
                 <div class="card_equipe">
                     <div class="imagens">
-                        <img src="img/icon-visao.png" alt="">
+                        <img src="img/icon-visao.png" alt="Icone de olho para representar a visão da empressa. Clique para ler o txto">
                     </div>
                     <div class="caixao_dentro">
                         <h2>Visão</h2>
@@ -395,7 +395,7 @@
                 </div>
                 <div class="card_equipe">
                     <div class="imagens">
-                        <img src="img/icon-valores.png" alt="">
+                        <img src="img/icon-valores.png" alt="Icone de equipe para representar os valores da empressa. Clique para ler o txto">
                     </div>
                     <div class="caixao_dentro">
                         <h2>Valores</h2>
@@ -569,6 +569,21 @@
             2024 Fluxus.
         </div>
     </footer>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "7a19d54e-4461-494e-a21d-88b6383383da", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "bd65f334-d69b-48e7-ad82-91e982d0b8e9", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+      
     <Script src="JS/main.js"></Script>
 
 </body>
