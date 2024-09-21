@@ -26,6 +26,10 @@ html {
 h1 {
     color: var(--b)
 }
+header{
+    position: fixed;
+    width: 100%;
+}
 
 .FirstTitle {
     background-color: var(--AZUL-CLAROOO);
@@ -43,6 +47,10 @@ nav {
     display: none;
 }
 
+#ImgNavBar {
+    display: none;
+}
+
 #Menu {
     color: var(--b);
     background-color: var(--AZUL-CLAROOO);
@@ -51,11 +59,15 @@ nav {
     cursor: pointer;
 }
 
+#Close {
+    cursor: pointer;
+}
+
 #NavBar>ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
     padding: 5%;
     gap: 10px;
@@ -82,9 +94,6 @@ nav {
     transition: transform 0.3s;
 }
 
-.cards:hover {
-    transform: scale(1.05);
-}
 
 .cards img {
     width: 150px;
@@ -114,28 +123,92 @@ nav {
     color: #0056b3;
 }
 
+.HistoriaFluxus {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 3% 10% 2% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: var(--AZUL-TRNPARENTE);
+}
+
+.HistoriaFluxus img {
+    height: 300px;
+    width: 300px;
+}
+.Projects{
+    background-color: #0056b3;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 5%;
+}
+
+.Items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1%;
+}
+/* .Teste{
+    
+} */
+
+.ImgsProjects{
+    display: block;
+    height: 300px;
+    width: 200px;
+} 
+
+
+
 @media screen and (min-width: 750px) {
+
+    main {
+        padding-top: 5%;
+    }
+
     #Menu {
         display: none;
     }
 
-    nav {
-        display: inline-block;
+    #Close {
+        display: none;
     }
 
-    header {
-        /* width: 100%; */
-        /* display: flex; */
-        /* justify-content: space-around; */
-        /* background-color: var(--AZUL-CLAROO); */
+    .FirstTitle {
+        display: none;
+    }
+
+    #ImgNavBar {
+        display: block;
+        height: 100px;
+        width: 200px;
+    }
+
+    nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        margin: 0%;
+        height: 1vw;
     }
 
     #NavBar>ul {
         list-style: none;
+        border-radius: 0px 0px 0px 0px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
         gap: 10px;
+        margin: 0%;
+        width: 100%;
+        height: 1vw;
     }
 }
