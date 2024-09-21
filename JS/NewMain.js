@@ -1,13 +1,21 @@
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "./img/menu_white_36dp.svg";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "./img/close_white_36dp.svg";
+document.getElementById("BodySizing").addEventListener("onresize", function () {
+    if (window.innerWidth >= 750) {
+        document.getElementById("NavBar").style.display = "block"
+    }else{
+         document.getElementById("NavBar").style.display = "none"
     }
-}
+});
+
+document.getElementById("Menu").addEventListener("click", function () {
+
+    if (document.getElementById("NavBar").style.display == "block") {
+
+        document.getElementById("NavBar").style.display = "none"
+    } else {
+        document.getElementById("NavBar").style.display = "block"
+    }
+});
+
 const people = [
     {
         name: "Ana Beatriz",
@@ -117,3 +125,5 @@ people.forEach(person => {
     
     cardContainer.appendChild(card);
 });
+
+console.log("O programa acabou!!!");
