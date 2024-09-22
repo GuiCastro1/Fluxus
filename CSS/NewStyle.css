@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  monospace;
 }
 
 :root {
@@ -26,7 +27,8 @@ html {
 h1 {
     color: var(--b)
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
 }
@@ -81,19 +83,14 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    margin: 10px;
 }
 
 .cards {
     height: 350px;
     width: 150px;
-    /* background-color: #f4f4f4; */
-    border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     margin-bottom: 20px;
-    /* overflow: hidden; */
-    transition: transform 0.3s;
 }
-
 
 .cards img {
     width: 150px;
@@ -126,7 +123,7 @@ nav {
 .HistoriaFluxus {
     flex-wrap: wrap;
     gap: 20px;
-    padding: 3% 10% 2% 10%;
+    padding: 5% 10% 2% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +136,8 @@ nav {
     height: 300px;
     width: 300px;
 }
-.Projects{
+
+.Projects {
     background-color: #0056b3;
     display: grid;
     grid-template-columns: auto auto;
@@ -147,30 +145,105 @@ nav {
     padding: 5%;
 }
 
-.Items{
+.Items {
     display: flex;
+    margin-bottom: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     padding: 1%;
 }
-/* .Teste{
-    
-} */
 
-.ImgsProjects{
+.ImgsProjects {
     display: block;
     height: 300px;
     width: 200px;
-} 
+}
 
+.Work {
+    background-color: var(--Cinza);
+    height: auto;
+    margin: 5%;
+    padding: 5%;
+    gap: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.ImgWork {
+    width: 220px;
+    border-radius: 10px;
+}
+
+.DeskLocal {
+    margin: 10%;
+}
+
+.Curriculum {
+    margin: 10%;
+}
+
+.ItemsCurriculum {
+    gap: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px;
+}
+
+.card {
+    height: 350px;
+    width: 150px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.card img {
+    width: 150px;
+    height: 200px;
+}
+
+footer {
+    padding: 5%;
+    margin: 15% 0% 0% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    background-color: #007bff;
+}
+footer > img{
+    width: 150px;
+    height: 200px;
+}
+
+.teste {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h4{
+    background-color: #007bff;
+    text-align: center;
+}
 
 @media screen and (min-width: 750px) {
 
     main {
-        padding-top: 5%;
+        padding-top: 8%;
     }
 
     #Menu {
@@ -187,7 +260,7 @@ nav {
 
     #ImgNavBar {
         display: block;
-        height: 100px;
+        height: 90px;
         width: 200px;
     }
 
@@ -195,8 +268,7 @@ nav {
         display: block;
         position: fixed;
         width: 100%;
-        margin: 0%;
-        height: 1vw;
+        height: 5%;
     }
 
     #NavBar>ul {
@@ -206,9 +278,70 @@ nav {
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
-        gap: 10px;
         margin: 0%;
         width: 100%;
-        height: 1vw;
+        height: 5%;
+    }
+
+    .Projects {
+        background-color: #0056b3;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        padding: 5%;
+        margin: 0% 10% 0% 10%;
+    }
+
+    .Work {
+        background-color: var(--Cinza);
+        height: auto;
+        margin: 10%;
+        padding: 2%;
+    }
+
+    .ImgWork {
+        width: 450px;
+        border-radius: 10px;
+    }
+
+    .DeskLocal {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 70px;
+        margin: 3%;
+    }
+
+    .Curriculum {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 5%;
+    }
+
+    .ItemsCurriculum {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    footer {
+        padding: 5%;
+        margin: 15% 0% 0% 0%;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 40px;
+        background-color: #007bff;
+    }
+    
+    .teste {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
     }
 }
