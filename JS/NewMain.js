@@ -33,7 +33,7 @@ const people = [
     {
         name: "Ana Beatriz",
         role: "Designer",
-        imgSrc: "../img/Ana_teste02.png",
+        imgSrc: "img/Ana_teste02.png",
         github: "https://github.com/seu_usuario",
         linkedin: "https://www.linkedin.com/in/seu_usuario",
         email: "mailto:seu_email@gmail.com"
@@ -41,7 +41,7 @@ const people = [
     {
         name: "Davi",
         role: "Programador",
-        imgSrc: "../img/Davi.png",
+        imgSrc: "img/Davi.png",
         github: "https://github.com/seu_usuario",
         linkedin: "https://www.linkedin.com/in/seu_usuario",
         email: "mailto:seu_email@gmail.com"
@@ -49,7 +49,7 @@ const people = [
     {
         name: "Guilherme",
         role: "Programador",
-        imgSrc: "../img/Gui.png",
+        imgSrc: "img/Gui.png",
         github: "https://github.com/GuiCastro1",
         linkedin: "https://www.linkedin.com/in/guilherme-castro-0b987b304",
         email: "mailto:seu_email@gmail.com"
@@ -57,7 +57,7 @@ const people = [
     {
         name: "Mariana",
         role: "Programadora",
-        imgSrc: "../img/Mari.png",
+        imgSrc: "img/Mari.png",
         github: "https://github.com/seu_usuario",
         linkedin: "https://www.linkedin.com/in/seu_usuario",
         email: "mailto:gui.castro.0001.1426@gmail.com"
@@ -65,7 +65,7 @@ const people = [
     {
         name: "Fabiano",
         role: "Designer",
-        imgSrc: "../img/Fabiano.png",
+        imgSrc: "img/Fabiano.png",
         github: "https://github.com/seu_usuario",
         linkedin: "https://www.linkedin.com/in/seu_usuario",
         email: "mailto:seu_email@gmail.com"
@@ -73,35 +73,35 @@ const people = [
     {
         name: "Sophia",
         role: "CEO",
-        imgSrc: "../img/15.png",
+        imgSrc: "img/15.png",
         linkedin: "https://www.linkedin.com/in/sophia-carvalho-dos-anjos-b27b4120a/",
         email: "mailto:carvalho.sophia1406@gmail.com"
     },
     {
         name: "Isadora",
         role: "Diretora de Sucesso do Cliente",
-        imgSrc: "../img/16.png",
+        imgSrc: "img/16.png",
         linkedin: "https://www.linkedin.com/in/isadora-castro-cr/",
         email: "mailto: isadoracrdecastro@outlook.com"
     },
     {
         name: "Luiz",
         role: "Engenheiro DevOps",
-        imgSrc: "../img/17.png",
+        imgSrc: "img/17.png",
         linkedin: "https://www.linkedin.com/in/luiz-felipe-di-lorenzo-rossi-abb925308/",
         email: "mailto:dilorenzoluizinho7@gmail.com"
     },
     {
         name: "Adriano",
         role: "Engenheiro de Nuvem",
-        imgSrc: "../img/18.png",
+        imgSrc: "img/18.png",
         linkedin: "https://www.linkedin.com/in/adriano-cristiano-889192309/",
         email: "mailto: cristianoadriano376@gmail.com"
     },
     {
         name: "Vitor",
         role: "Desenvolvedor de Software",
-        imgSrc: "../img/19.png",
+        imgSrc: "img/19.png",
         linkedin: "https://www.linkedin.com/in/victor-hugo-f/",
         email: "mailto:victorhugo.santos00@outlook.com"
     },
@@ -142,7 +142,7 @@ people.forEach(person => {
 const Projects = [
     {
         
-        Img: "../img/Topia.png",
+        Img: "img/Topia.png",
         alt:"fdgdg",
         NameProject: "Topia",
         Descrition: "A Topia é uma startup, que tem como visão tornar o mundo mais acessível para os deficientes visuais. São inspirados em criar soluções inovadoras, por isso desenvolvemos um dispositivo que poderia auxiliar os deficientes visuais a caminharem pelo mundo de maneira independente e segura.",
@@ -150,7 +150,7 @@ const Projects = [
     },
     {
         
-        Img: "../img/RA.jpg",
+        Img: "img/RA.jpg",
         alt:"fdgdg",
         NameProject: "Reusedecor",
         Descrition: "Quentin Tarantino, ator e diretor de grandes sucessos do cinema, contratou a Fluxus para desenvolver um site para a Red Apple, sua marca de cigarros fictícia que sempre aparece em seus filmes. O site servirá como um atrativo para divulgar seu último filme, que já tem data para sair do papel.",
@@ -158,7 +158,7 @@ const Projects = [
     },
     {
         
-        Img: "../img/Redusedecor.png",
+        Img: "img/Redusedecor.png",
         alt:"fdgdg",
         NameProject: "Landing Page Tarantino",
         Descrition: "No final de cada ano, nossa empresa promove um desafio: o desenvolvedor que criar o melhor site ganha um bônus de fim de ano e duas semanas de férias. No último desafio, tivemos cinco grandes projetos competindo na final. Confira os sites dos participantes. Passe o cursor sobre a imagem da empressa Redusedecor.",
@@ -208,37 +208,37 @@ Projects.forEach(Itens => {
 
 const Clients = [
     {
-        IMG:"../img/MJ.jpg",
+        IMG:"img/MJ.jpg",
         alt:"Imagem do Cliente Michael Jackson",
         Name:"Michael Jackson",
         Descrition:"Estou extremamente satisfeito com o serviço prestado. A equipe é super profissional e atenciosa. Recomendo!"
     },
     {
-        IMG:"../img/travis.jpg",
+        IMG:"img/travis.jpg",
         alt:"Imagem do Cliente Travis Bickle",
         Name:"Travis Bickle",
         Descrition:"O atendimento ao cliente é simplesmente impecável. Resolveram meu problema rapidamente e com muita simpatia. Parabéns pela excelência!"
     },
     {
-        IMG:"../img/django.jpg",
+        IMG:"img/django.jpg",
         alt:"Imagem do Cliente Django",
         Name:"Django",
         Descrition:"O serviço oferecido superou todas as minhas expectativas. Rápido, eficiente e com um atendimento de primeira. Com certeza, voltarei a utilizar."
     },
     {
-        IMG:"../img/WW.jpg",
+        IMG:"img/WW.jpg",
         alt:"Imagem da Cliente Whitney Houston",
         Name:"Whitney Houston",
         Descrition:"A qualidade do serviço é excepcional. Cada detalhe foi pensado com muito cuidado, e o resultado final foi incrível. Muito obrigada!"
     },
     {
-        IMG:"../img/anne.jpg",
+        IMG:"img/anne.jpg",
         alt:"Imagem da Cliente Anne Hathaway",
         Name:"Anne Hathaway",
         Descrition:"Fiquei muito satisfeito com o serviço. A equipe é extremamente competente e atenciosa. Recomendo fortemente!"
     },
     {
-        IMG:"../img/rochelle.jpg",
+        IMG:"img/rochelle.jpg",
         alt:"Imagem da Cliente Rochelle",
         Name:"Rochelle",
         Descrition:"O profissionalismo e a dedicação da equipe são notáveis. Desde o primeiro contato até a finalização do serviço, tudo foi perfeito. Continuem assim!"
