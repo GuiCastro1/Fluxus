@@ -135,6 +135,20 @@
 
     </footer>
     <h4>copy Rigth</h4>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "7a19d54e-4461-494e-a21d-88b6383383da", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "bd65f334-d69b-48e7-ad82-91e982d0b8e9", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
     <script src="JS/NewMain.js"></script>
 </body>
 

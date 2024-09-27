@@ -1,11 +1,11 @@
-document.getElementById("BodySizing").addEventListener("onresize", function () {
+document.getElementById("BodySizing").addEventListener("resize", function () {
     if (window.innerWidth >= 750) {
         document.getElementById("NavBar").style.display = "block"
     } else {
         document.getElementById("NavBar").style.display = "none"
     }
 });
-document.getElementById("BodySizing").addEventListener("onresize", function () {
+document.getElementById("BodySizing").addEventListener("resize", function () {
     if (window.innerWidth >= 750) {
         document.querySelector(".FirstTitle").style.display = "block"
     } else {
@@ -152,7 +152,7 @@ const Projects = [
 
         Img: "img/RA.jpg",
         alt: "fdgdg",
-        NameProject: "Reusedecor",
+        NameProject: "Landing Page Tarantino",
         Descrition: "Quentin Tarantino, ator e diretor de grandes sucessos do cinema, contratou a Fluxus para desenvolver um site para a Red Apple, sua marca de cigarros fictícia que sempre aparece em seus filmes. O site servirá como um atrativo para divulgar seu último filme, que já tem data para sair do papel.",
         LinkProject: "https://www.linkedin.com/in/seu_usuario"
     },
@@ -160,7 +160,7 @@ const Projects = [
 
         Img: "img/Redusedecor.png",
         alt: "fdgdg",
-        NameProject: "Landing Page Tarantino",
+        NameProject: "Reusedecor",
         Descrition: "No final de cada ano, nossa empresa promove um desafio: o desenvolvedor que criar o melhor site ganha um bônus de fim de ano e duas semanas de férias. No último desafio, tivemos cinco grandes projetos competindo na final. Confira os sites dos participantes. Passe o cursor sobre a imagem da empressa Redusedecor.",
         LinkProject: "https://www.linkedin.com/in/seu_usuario"
     }
@@ -267,19 +267,5 @@ Clients.forEach(teste => {
 
     DivClients.appendChild(card)
 });
-
-
-window.watsonAssistantChatOptions = {
-    integrationID: "7a19d54e-4461-494e-a21d-88b6383383da", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "bd65f334-d69b-48e7-ad82-91e982d0b8e9", // The ID of your service instance.
-    onLoad: async (instance) => { await instance.render(); }
-};
-setTimeout(function () {
-    const t = document.createElement('script');
-    t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-});
-
 
 console.log("O programa acabou!!!");
