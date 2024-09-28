@@ -142,7 +142,7 @@ people.forEach(person => {
 const Projects = [
     {
 
-        Img: "img/Topia.png",
+        Img: "img/TOPIA.png",
         alt: "fdgdg",
         NameProject: "Topia",
         Descrition: "A Topia é uma startup, que tem como visão tornar o mundo mais acessível para os deficientes visuais. São inspirados em criar soluções inovadoras, por isso desenvolvemos um dispositivo que poderia auxiliar os deficientes visuais a caminharem pelo mundo de maneira independente e segura.",
@@ -150,7 +150,7 @@ const Projects = [
     },
     {
 
-        Img: "img/RA.jpg",
+        Img: "img/4.png",
         alt: "fdgdg",
         NameProject: "Landing Page Tarantino",
         Descrition: "Quentin Tarantino, ator e diretor de grandes sucessos do cinema, contratou a Fluxus para desenvolver um site para a Red Apple, sua marca de cigarros fictícia que sempre aparece em seus filmes. O site servirá como um atrativo para divulgar seu último filme, que já tem data para sair do papel.",
@@ -158,7 +158,7 @@ const Projects = [
     },
     {
 
-        Img: "img/Redusedecor.png",
+        Img: "img/REUSEDECOR.png",
         alt: "fdgdg",
         NameProject: "Reusedecor",
         Descrition: "No final de cada ano, nossa empresa promove um desafio: o desenvolvedor que criar o melhor site ganha um bônus de fim de ano e duas semanas de férias. No último desafio, tivemos cinco grandes projetos competindo na final. Confira os sites dos participantes. Passe o cursor sobre a imagem da empressa Redusedecor.",
